@@ -1,0 +1,28 @@
+//Registrar clientes
+# POST http://localhost:3333/api-clientes/registrar-cliente
+# Content-Type: application/json
+
+# {
+#     "cedula": "1001031722",
+#     "nombre": "Helena",
+#     "apellido": "Vargas",
+#     "telefono": "23253543",
+#     "correo": "helena@unal.edu.co"
+# }
+
+
+# GET http://localhost:3333/api-clientes/listar-clientes
+# Content-Type: application/json
+
+# PUT http://localhost:3333/api-clientes/actualizar-cliente/1001031722
+# Content-Type: application/json
+
+# {
+#     "nombre": "HelenaAct1",
+#     "apellido": "VargasAct1",
+#     "telefono": "23253543",
+#     "correo": "helena@unal.edu.co"
+# }
+
+DELETE  http://localhost:3333/api-clientes/eliminar-cliente/1001031722
+Content-Type: application/json
